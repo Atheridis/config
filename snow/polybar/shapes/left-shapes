@@ -1,0 +1,15 @@
+[module/left-rcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.bgstartmenu}
+
+
+[module/left-lcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.bgstartmenu}
+; vim:ft=dosini

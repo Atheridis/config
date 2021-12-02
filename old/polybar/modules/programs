@@ -1,0 +1,12 @@
+[module/rofi]
+type = custom/text
+
+content = "%{T41} %{T-} %{F#FF0}ARCH LINUX"
+;content = "ROFI"
+content-background = ${colors.bgstartmenu}
+content-foreground = ${colors.fgstartmenu}
+click-left = rofi -modi drun, run -show drun -me-select-entry '' -me-accept-entry MousePrimary 
+content-padding = 2
+
+
+; vim:ft=dosini

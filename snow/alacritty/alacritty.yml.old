@@ -1,0 +1,80 @@
+# Space Duck
+colors:
+  # Default colors
+  primary:
+    background: '#05325e'
+    foreground: '#b0f0f7'
+  # Normal colors
+  normal:
+    black:   '#111111'
+    red:     '#901010'
+    green:   '#109010'
+    yellow:  '#907020'
+    blue:    '#101090'
+    magenta: '#902070'
+    cyan:    '#207090'
+    white:   '#888888'
+
+  # Bright colors
+  bright:
+    black:   '#444444'
+    red:     '#d01010'
+    green:   '#30e030'
+    yellow:  '#e0e000'
+    blue:    '#1020d0'
+    magenta: '#d040e0'
+    cyan:    '#20e0f0'
+    white:   '#eeeeee'
+
+
+background_opacity: 1
+
+font:
+  normal:
+    family: "Fira Mono for Powerline"
+    style: Medium
+  bold:
+    family: "Fira Mono for Powerline"
+    style: Bold
+  italic:
+    family: "Fira Mono for Powerline"
+    style: italic
+  bold_italic:
+    family: "Fira Mono for Powerline"
+    style: Regular
+
+  # Point size
+  size: 14
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 6
+    y: 6
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: false
+
+live_config_reload: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }

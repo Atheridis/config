@@ -1,0 +1,139 @@
+; text
+;; default
+font-0 = "Noto Sans:type:Bold:size=13;4"
+font-1 = 
+font-2 = 
+font-3 = 
+font-4 = 
+font-5 = 
+font-6 =
+font-7 =
+font-8 = 
+font-9 = 
+font-10 = 
+font-11 = 
+font-12 = 
+font-13 = 
+font-14 = 
+font-15 = 
+font-16 = 
+font-17 = 
+font-18 = 
+font-19 = 
+
+; shapes
+font-20 = "JetBrainsMono Nerd Font:size=24;6"
+font-21 = 
+font-22 = 
+font-23 = 
+font-24 = 
+font-25 = 
+font-26 = 
+font-27 = 
+font-28 = 
+font-29 = 
+font-30 = 
+font-31 = 
+font-32 = 
+font-33 = 
+font-34 = 
+font-35 = 
+font-36 = 
+font-37 = 
+font-38 = 
+font-39 = 
+
+; program icons
+;; rofi
+font-40 = "JetBrainsMono Nerd Font:size=20;5"
+;; firefox
+font-41 = "JetBrainsMono Nerd Font:size=20;5"
+;; file explorer
+font-42 = "JetBrainsMono Nerd Font:size=20;5"
+;; vim
+font-43 = "JetBrainsMono Nerd Font:size=20;5"
+font-44 = 
+font-45 = 
+font-46 = 
+font-47 = 
+font-48 = 
+font-49 = 
+font-50 = 
+font-51 = 
+font-52 = 
+font-53 = 
+font-54 = 
+font-55 = 
+font-56 = 
+font-57 = 
+font-58 = 
+font-59 = 
+
+; utilitiy icons
+;; keyboard
+font-60 = "JetBrainsMono Nerd Font:size=20;5"
+;; keyboard-layout
+font-61 = "Noto Sans:type:Bold:size=13;2"
+font-62 = 
+font-63 = 
+font-64 = 
+;; filesystem
+font-65 = "JetBrainsMono Nerd Font:size=13;4"
+font-66 = 
+font-67 = 
+font-68 = 
+;; powermenu
+font-69 = "JetBrainsMono Nerd Font:size=20;5"
+;; powermenu-text
+font-70 = "Noto Sans:type:Bold:size=13;4"
+;; powermenu-text-seperator
+font-71 = "Noto Sans:type:Bold:size=13;4"
+font-72 = 
+font-73 = 
+font-74 = 
+;; pulseaudio
+font-75 = "JetBrainsMono Nerd Font:size=20;5"
+font-76 = "Noto Sans Mono:type:Bold:size=13;4"
+font-77 = 
+font-78 = 
+font-79 = 
+;; i3-Japanese
+font-80 = "Noto Sans CJK JP:size=16;4"
+font-81 = 
+font-82 = 
+font-83 = 
+font-84 = 
+;; time
+font-85 = "JetBrainsMono Nerd Font:size=16;4"
+font-86 = 
+font-87 = 
+font-88 = 
+font-89 = 
+font-90 = 
+font-91 = 
+font-92 = 
+font-93 = 
+font-94 = 
+font-95 = 
+font-96 = 
+font-97 = 
+font-98 = 
+font-99 = 
+
+; special spaces
+;; programs
+font-100 = "Noto Sans:type:Bold:size=13;4"
+;; pulseaudio
+font-101 = "Noto Sans:type:Bold:size=13;4"
+;; powermenu
+font-102 = "Noto Sans:type:Bold:size=13;4"
+font-103 = 
+font-104 = 
+font-105 = 
+font-106 = 
+font-107 = 
+font-108 = 
+font-109 = 
+font-110 = 
+
+; vim:ft=dosini

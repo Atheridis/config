@@ -1,0 +1,78 @@
+# TokyoNight Alacritty Colors
+colors:
+  # Default colors
+  primary:
+    background: '#1a1b26'
+    foreground: '#c0caf5'
+
+  # Normal colors
+  normal:
+    black:   '#15161E'
+    red:     '#a7566e'
+    green:   '#5e9e3a'
+    yellow:  '#a07f48'
+    blue:    '#4a6aa7'
+    magenta: '#8b6aa7'
+    cyan:    '#4d8faf'
+    white:   '#99a1c6'
+
+  # Bright colors
+  bright:
+    black:   '#414868'
+    red:     '#f7768e'
+    green:   '#9ece6a'
+    yellow:  '#e0af68'
+    blue:    '#7aa2f7'
+    magenta: '#bb9af7'
+    cyan:    '#7dcfff'
+    white:   '#c0caf5'
+
+font:
+  normal:
+    family: Fira Mono for Powerline
+    style: Medium
+  bold:
+    family: Fira Mono for Powerline
+    style: Bold
+  italic:
+    family: Fira Mono for Powerline
+    style: italic
+  bold_italic:
+    family: Fira Mono for Powerline
+    style: Regular
+
+  # Point size
+  size: 11
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 6
+    y: 6
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: false
+
+live_config_reload: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }

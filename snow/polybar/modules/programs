@@ -1,0 +1,38 @@
+[module/rofi]
+type = custom/text
+
+content = "%{T41}  %{T-} ARCH LINUX"
+;content = "ROFI"
+content-background = ${colors.bgstartmenu}
+content-foreground = ${colors.fgstartmenu}
+click-left = rofi -modi drun, run -show drun -me-select-entry '' -me-accept-entry MousePrimary
+content-padding = 8
+
+[module/firefox]
+type = custom/text
+
+content = " %{T42} %{T-}"
+content-background = ${colors.purple}
+content-foreground = #fff
+click-left = firefox
+content-padding = 2
+
+[module/files]
+type = custom/text
+
+content = "%{T101} %{T43} %{T-}"
+content-background = ${colors.purple}
+content-foreground = #fff
+click-left = nemo
+content-padding = 2
+
+[module/vim]
+type = custom/text
+
+content = " %{T44} %{T9} "
+content-background = ${colors.purple}
+content-foreground = #fff
+click-left = alacritty -e nvim
+content-padding = 1
+
+; vim:ft=dosini

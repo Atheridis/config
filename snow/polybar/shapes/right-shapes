@@ -1,0 +1,39 @@
+[module/date-rcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.bgtime}
+
+
+[module/date-lcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.bgtime}
+
+[module/keyboard-rcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.bglayout}
+
+
+[module/keyboard-lcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.bglayout}
+
+[module/padding]
+type = custom/text
+
+content = "      "
+content-background = #00000000
+content-foreground = #00000000
+
+
+; vim:ft=dosini

@@ -1,0 +1,163 @@
+
+configuration {
+	  font:							              "Noto Sans Medium 13";
+    show-icons:                     true;
+	  icon-theme: 					          "Papirus";
+    display-drun: 					        "";
+    drun-display-format:            "{name}";
+    hover-select:                   true;
+}
+
+
+/**** GLOBALS ****/
+
+// COLORS ARE SET BY #RRGGBBAA or #RGBA
+* {
+    // transparent
+    trans:                          #0000;
+
+    // background is transparent
+    // when selecting a
+    // background image
+    background:                     @trans;
+
+    // keep foreground transparent
+    // to remove dotted lines
+    foreground:                     @trans;
+
+    // Search bar background
+    background-bar:                 #0002;
+
+    // background and text 
+    // of selected box
+    selected:                       #0003;
+    selected-text:                  #fff;
+
+    txt-color:                      #000;
+
+    prompt-color:                   #17c;
+}
+
+/* */
+
+
+/**** Window ****/
+
+window {
+    transparency:                   "~/.config/rofi/background.png";
+    background-color:               @background;
+    location:                       south west;
+    // original width 600
+	  width:							            630px;
+    // original height 820
+    height:                         861px;
+    // original x-offset 20
+    x-offset:                       18px;
+    // original y-offset -60
+    y-offset:                       -57px;
+    // margin calculated based
+    // on original width | height
+    // and actual width | height
+    margin:                         10px 22px 31px 8px;
+    children:                       [ listview, inputbar ];
+    spacing:                       	10px;
+    padding:                        20px 20px 30px 20px;
+}
+
+/* */
+
+
+/**** Inputbar ****/
+
+inputbar {
+	  children: 						          [ prompt, entry ];
+    background-color:               @background-bar;
+    expand:                         false;
+	  border:							            0px 0px 0px 0px;
+    border-radius:                  20px;
+    padding:                        10px 0px 10px 40px;
+}
+
+prompt {
+    enabled: 						            true;
+	  padding: 						            0px 20px 0px -20px;
+	  background-color: 				      @trans;
+	  text-color:                     @prompt-color;
+	  font:                           "JetBrainsMono Nerd Font 18";
+}
+
+entry {
+    text-color:                     @txt-color;
+    placeholder-color:              @txt-color;
+    placeholder:                    "Search";
+    padding:                        2px 0px 0px 0px;
+    expand:                         true;
+    blink:                          true;
+}
+
+/* */
+
+
+/**** Listview ****/
+
+listview {
+    background-color:               @trans;
+    columns:                        3;
+    spacing:                        0px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+    scrollbar:                      false;
+}
+
+
+/* Element */
+
+element {
+    orientation:                    vertical;
+    padding:                        14px 0px 20px 0px;
+}
+
+element selected.normal {
+    background-color:               @selected;
+    text-color:                     @selected-text;
+    border-radius:                  20px;
+}
+
+element normal.normal {
+    background-color:               @trans;
+}
+
+element alternate.normal {
+    background-color:               @trans;
+}
+
+
+/* Icons */
+
+element-icon {
+    background-color: 				      @trans;
+    horizontal-align:               0.5;
+    size:                           70px;
+}
+
+
+/* Text */
+
+element-text {
+    background-color: 				      @trans;
+    text-color:                     @txt-color;
+    expand:                         true;
+    horizontal-align:               0.5;
+    margin:                         10px 10px -10px 10px;
+}
+
+element-text selected.normal {
+    text-color:                     @selected-text;
+
+}
+
+/* */
+
+
+// vim:ft=css

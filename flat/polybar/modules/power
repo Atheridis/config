@@ -1,0 +1,38 @@
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 0
+
+label-open = "%{T70}⏻ %{T-}"
+label-open-background = ${colors.cyan-0}
+label-close = "%{T71}Cancel%{T-}"
+label-close-background = ${colors.cyan-0}
+label-separator = "%{T72}|%{T-}"
+label-separator-background = ${colors.cyan-0}
+label-open-padding = 1
+label-close-padding = 1
+
+
+menu-0-0 = "%{T71}Reboot%{T-}"
+menu-0-0-exec = menu-open-1
+menu-0-1 = "%{T71}Shutdown%{T-}"
+menu-0-1-exec = menu-open-2
+menu-0-1-background = ${colors.cyan-0}
+menu-0-0-background = ${colors.cyan-0}
+menu-0-0-padding = 1
+menu-0-1-padding = 1
+
+menu-1-0 = "%{T71}Reboot%{T-}"
+menu-1-0-exec = systemctl reboot
+menu-1-0-background = ${colors.cyan-0}
+; menu-1-0-background = ${colors.cyan-0}
+menu-1-0-padding = 1
+
+menu-2-0 = "%{T71}Shutdown%{T-}"
+menu-2-0-exec = systemctl poweroff
+menu-2-0-background = ${colors.cyan-0}
+menu-2-0-padding = 1
+
+; vim:ft=dosini

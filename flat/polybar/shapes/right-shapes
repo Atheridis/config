@@ -1,0 +1,14 @@
+[module/jitter-right-1]
+type = custom/text
+
+content = %{T21} %{T-}
+content-foreground = ${colors.blue-0}
+content-background = ${colors.blue-2}
+
+[module/right-tri-down-1]
+type = custom/text
+
+content = %{T22} %{T-}
+content-foreground = ${colors.blue-2}
+
+; vim:ft=dosini

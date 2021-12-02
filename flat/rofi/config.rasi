@@ -1,0 +1,153 @@
+
+configuration {
+	  font:							              "Noto Sans Medium 11";
+    show-icons:                     true;
+	  icon-theme: 					          "Papirus";
+    display-drun: 					        "";
+    drun-display-format:            "{name}";
+    hover-select:                   true;
+}
+
+
+/**** GLOBALS ****/
+
+// COLORS ARE SET BY #RRGGBBAA or #RGBA
+* {
+    // transparent
+    trans:                          #0000;
+
+    background:                     #81d4fa8a;
+
+    // keep foreground transparent
+    // to remove dotted lines
+    foreground:                     @trans;
+
+    // Search bar background
+    background-bar:                 #0004;
+
+    // background and text 
+    // of selected box
+    selected:                       #0003;
+    selected-text:                  #fff;
+
+    txt-color:                      #000;
+
+    prompt-color:                   #39f;
+}
+
+/* */
+
+
+/**** Window ****/
+
+window {
+    background-color:               @background;
+    location:                       center;
+	  width:							            820px;
+    height:                         480px;
+    x-offset:                       0px;
+    y-offset:                       0px;
+    children:                       [ inputbar, listview ];
+    spacing:                       	10px;
+    padding:                        30px 20px 20px 20px;
+    border-radius:                  0px;
+}
+
+/* */
+
+
+/**** Inputbar ****/
+
+inputbar {
+	  children: 						          [ prompt, entry ];
+    background-color:               @background-bar;
+    expand:                         false;
+	  border:							            -5px 0px -5px 0px;
+    border-radius:                  5px;
+    padding:                        10px 0px 10px 40px;
+    margin:                         0px 0px 20px 0px;
+}
+
+prompt {
+    enabled: 						            true;
+	  padding: 						            0px 20px 0px -20px;
+	  background-color: 				      @trans;
+	  text-color:                     @prompt-color;
+	  font:                           "JetBrainsMono Nerd Font 14";
+}
+
+entry {
+    text-color:                     @txt-color;
+    placeholder-color:              @txt-color;
+    placeholder:                    "Search";
+    padding:                        0px 0px 0px 0px;
+    expand:                         true;
+    blink:                          true;
+}
+
+/* */
+
+
+/**** Listview ****/
+
+listview {
+    background-color:               @trans;
+    columns:                        5;
+    spacing:                        0px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+    scrollbar:                      false;
+}
+
+
+/* Element */
+
+element {
+    orientation:                    vertical;
+    padding:                        14px 0px 20px 0px;
+}
+
+element selected.normal {
+    background-color:               @selected;
+    text-color:                     @selected-text;
+    border-radius:                  5px;
+}
+
+element normal.normal {
+    background-color:               @trans;
+}
+
+element alternate.normal {
+    background-color:               @trans;
+}
+
+
+/* Icons */
+
+element-icon {
+    background-color: 				      @trans;
+    horizontal-align:               0.5;
+    size:                           56px;
+}
+
+
+/* Text */
+
+element-text {
+    background-color: 				      @trans;
+    text-color:                     @txt-color;
+    expand:                         true;
+    horizontal-align:               0.5;
+    margin:                         10px 10px -10px 10px;
+}
+
+element-text selected.normal {
+    text-color:                     @selected-text;
+
+}
+
+/* */
+
+
+// vim:ft=css

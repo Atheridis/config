@@ -1,0 +1,62 @@
+[16colors]
+black        = #000
+lightred     = #F00
+lightgreen   = #0F0
+lightyellow  = #FF0
+lightblue    = #00F
+lightmagenta = #F0F
+lightcyan    = #0FF
+brightwhite  = #FFF
+
+gray    = #808080
+red     = #800000
+green   = #008000
+yellow  = #808000
+blue    = #000080
+magenta = #800080
+cyan    = #008080
+white   = #C0C0C0
+
+[colors]
+background = ${16colors.white}
+foreground = ${16colors.lightyellow}
+bgstartmenu = ${16colors.blue}
+fgstartmenu = ${16colors.lightcyan}
+
+bgmode = ${16colors.blue}
+bgfocused = ${16colors.lightcyan}
+bgvisible = ${16colors.lightcyan}
+bgunfocused = ${16colors.gray}
+bgurgent = ${16colors.lightred}
+
+fgmode = ${16colors.lightyellow}
+fgfocused = ${16colors.black}
+fgvisible = ${16colors.gray}
+fgunfocused = ${16colors.lightcyan}
+fgurgent = ${16colors.black}
+
+bglayout = ${16colors.blue}
+fglayout = ${16colors.brightwhite}
+bgindicator = ${16colors.lightred}
+fgindicator = ${16colors.brightwhite}
+
+bgvolume = ${16colors.magenta}
+fgvolume = ${16colors.brightwhite}
+bgmuted = ${16colors.magenta}
+fgmuted = ${16colors.brightwhite}
+
+bgtime = ${16colors.blue}
+fgtime = ${16colors.brightwhite}
+
+bgpower = ${16colors.red}
+fgpower = ${16colors.brightwhite}
+bgseparator = ${16colors.black}
+fgseparator = ${16colors.black}
+bgpoweroff = ${16colors.red}
+fgpoweroff = ${16colors.brightwhite}
+bgreboot = ${16colors.green}
+fgreboot = ${16colors.brightwhite}
+bgcancel = ${16colors.yellow}
+fgcancel = ${16colors.brightwhite}
+
+; vim:ft=dosini

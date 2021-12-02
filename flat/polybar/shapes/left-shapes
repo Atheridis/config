@@ -1,0 +1,28 @@
+[module/left-circle-1]
+type = custom/text
+
+content = "%{T23}%{T-}"
+content-foreground = ${colors.cyan-0}
+content-background = ${colors.cyan-1}
+  
+[module/left-tri-down-1]
+type = custom/text
+
+content = %{T22} %{T-}
+content-foreground = ${colors.cyan-1}
+content-background = ${colors.cyan-2}
+
+[module/left-tri-down-2]
+type = custom/text
+
+content = %{T22} %{T-}
+content-foreground = ${colors.cyan-2}
+content-background = ${colors.cyan-3}
+
+[module/left-tri-down-3]
+type = custom/text
+
+content = %{T22} %{T-}
+content-foreground = ${colors.cyan-3}
+
+; vim:ft=dosini

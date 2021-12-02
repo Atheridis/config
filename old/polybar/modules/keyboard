@@ -1,0 +1,18 @@
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format = <label-layout><label-indicator>
+format-spacing = 0
+
+label-layout = "%{T101} %{T61} %{T62}%layout%"
+label-layout-background = ${colors.bglayout}
+label-layout-foreground = ${colors.fglayout}
+label-layout-padding = 2
+
+label-indicator-padding = 1
+label-indicator-margin = 0
+label-indicator-background = ${colors.bgindicator}
+label-indicator-foreground = ${colors.fgindicator}
+
+; vim:ft=dosini

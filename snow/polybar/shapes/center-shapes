@@ -1,0 +1,16 @@
+[module/center-rcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.center}
+
+
+[module/center-lcircle-1]
+type = custom/text
+
+content = "%{T21}%{T-}"
+content-background = #00000000
+content-foreground = ${colors.center}
+
+; vim:ft=dosini

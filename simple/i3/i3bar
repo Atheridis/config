@@ -1,0 +1,51 @@
+[theme]
+file = "/home/yorugo/.config/i3/theme.toml"
+
+[icons]
+file = "/home/yorugo/.config/i3/icons.toml"
+
+[[block]]
+block = "custom"
+command = '''echo "  $(xkb-switch)"'''
+on_click = "xkb-switch -n"
+interval = 1
+
+[[block]]
+block = "disk_space"
+unit = "GB"
+interval = 60
+warning = 30.0
+alert = 15.0
+alert_absolute = true
+format = "{icon} {available} / {total}"
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{mem_used} /{mem_total}"
+warning_mem = 80
+critical_mem = 90
+interval = 10
+clickable = false
+
+[[block]]
+block = "cpu"
+interval = 10
+
+[[block]]
+block = "load"
+interval = 10
+format = "{1m}"
+
+[[block]]
+block = "sound"
+format = "{volume}"
+natural_mapping = true
+on_click = "pavucontrol"
+
+[[block]]
+block = "time"
+interval = 1
+format = "%Y-%m-%d | %H:%M:%S"
+
+# vim:ft=toml

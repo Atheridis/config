@@ -1,0 +1,38 @@
+[module/i3]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+pin-workspaces = true
+
+; Create scroll handler used to cycle workspaces
+enable-scroll = false
+
+format = <label-state> <label-mode>
+format-background = ${colors.blue-2}
+
+strip-wsnumbers = true
+name-sort = true
+
+label-mode = %{T81}%mode%%{T-}
+label-mode-background = ${colors.blue-2}
+label-mode-foreground = ${colors.black}
+label-mode-padding = 2
+
+label-focused = %{T81}%name%%{T-}
+label-focused-foreground = ${colors.blue-9}
+label-focused-padding = 2
+
+label-unfocused = %{T81}%name%%{T-}
+label-unfocused-foreground = ${colors.cyan-6}
+label-unfocused-padding = 2
+
+label-urgent = %{T81}%name%%{T-}
+label-urgent-foreground = ${colors.black}
+label-urgent-padding = 2
+
+label-visible = %{T81}%name%%{T-}
+label-visible-foreground = ${colors.cyan-8}
+label-visible-padding = 2
+
+
+; vim:ft=dosini

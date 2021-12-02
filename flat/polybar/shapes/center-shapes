@@ -1,0 +1,27 @@
+[module/cright-tri-up-1]
+type = custom/text
+
+content = %{T22} %{T-}
+content-background = ${colors.purple}
+content-foreground = ${colors.purple}
+
+[module/cleft-tri-up-1]
+type = custom/text
+
+content = %{T22} %{T-}
+content-background = ${colors.purple}
+content-foreground = ${colors.purple}
+
+[module/cright-circle-2]
+type = custom/text
+
+content = %{T23} %{T-}
+content-foreground = ${colors.purple}
+
+[module/cleft-circle-2]
+type = custom/text
+
+content = "%{T23}%{T-}"
+content-foreground = ${colors.purple}
+
+; vim:ft=dosini

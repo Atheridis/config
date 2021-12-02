@@ -1,0 +1,52 @@
+[colors]
+background = #00000000
+foreground = #d0f0ff
+bgstartmenu = #8bc6ff
+fgstartmenu = #004488
+
+bgmode = #3c81c0
+fgmode = #d0f0ff
+
+bgfocused = #3c81c0
+fgfocused = #ffffff
+linefocused = #ffffff
+
+bgvisible = #3c81c0
+fgvisible = #c1e0fe
+linevisible = #ffffff
+
+bgunfocused = #3c81c0
+fgunfocused = #c1e0fe
+
+bgurgent = #c90009
+fgurgent = #ffffff
+
+center = #3c81c0
+
+bglayout = #59a1e2
+fglayout = #f0ffff
+bgindicator = #59a1e2
+fgindicator = #f0ffff
+
+; Colors are changed in module/pulseaudio file
+; due to changing total color
+;bgvolume = #3c80d0
+;fgvolume = #f0ffff
+;bgmuted = #b7e8ff
+;fgmuted = #3c80d0
+
+bgtime = #1c61a0
+fgtime = #f0ffff
+
+bgpower = 
+fgpower = 
+bgseparator = 
+fgseparator = 
+bgpoweroff = 
+fgpoweroff = 
+bgreboot = 
+fgreboot = 
+bgcancel = 
+fgcancel = 
+
+; vim:ft=dosini

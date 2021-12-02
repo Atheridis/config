@@ -1,0 +1,80 @@
+colors:
+  # Default colors
+  primary:
+    background: "#000080"
+    foreground: "#FFFF00"
+
+  # Bright colors
+  bright:
+    black:    "#000000"
+    red:      "#FF0000"
+    green:    "#00FF00"
+    yellow:   "#FFFF00"
+    blue:     "#0000FF"
+    magenta:  "#FF00FF"
+    cyan:     "#00FFFF"
+    white:    "#FFFFFF"
+
+  # Normal colors
+  normal:
+    black:    "#808080"
+    red:      "#800000"
+    green:    "#008000"
+    yellow:   "#808000"
+    blue:     "#000080"
+    magenta:  "#800080"
+    cyan:     "#008080"
+    white:    "#C0C0C0"
+
+
+background_opacity: 1
+
+font:
+  normal:
+    family: "PxPlus IBM VGA 8x14"
+    style: Regular
+  bold:
+    family: "PxPlus IBM VGA 8x14"
+    style: Regular
+  italic:
+    family: "CozetteVector"
+    style: Regular
+  bold_italic:
+    family: "PxPlus IBM VGA 8x14"
+    style: Regular
+
+  # Point size
+  size: 18
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 0
+    y: 0
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: false
+
+live_config_reload: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }

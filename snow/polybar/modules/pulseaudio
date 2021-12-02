@@ -1,0 +1,21 @@
+[module/pulseaudio]
+type = internal/pulseaudio
+
+use-ui-max = true
+
+interval = 5
+
+; Background and foreground colors are changed here
+; in order to change the shape color when muting
+
+label-volume = "%{B#0000}%{F#3c80d0}%{T21}%{T-}%{B#3c80d0 F#f0ffff}  %{T76}墳 %{T77}%percentage:4%%%{T-}  %{B#0000}%{F#3c80d0}%{T21}%{T-}%{B#3c80d0 F-}"
+label-volume-padding = 0
+
+;label-muted = "%{T21} %{T-}%{T76}%{T-} MUTED%{T21} %{T-}"
+label-muted = "%{B#0000}%{F#b7e8ff}%{T21}%{T-}%{B#b7e8ff F#3c80d0}  %{T76}%{T-} MUTED  %{B#0000}%{F#b7e8ff}%{T21}%{T-}%{B#b7e8ff F-}"
+label-muted-padding = 0
+
+click-right = pavucontrol
+click-middle = alacritty --title "AlsaMixer" -e alsamixer
+
+; vim:ft=dosini

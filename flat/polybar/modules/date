@@ -1,0 +1,15 @@
+[module/date]
+type = internal/date
+interval = 1
+
+date = ""
+date-alt = " %d-%m-%Y"
+
+time = "%H:%M"
+time-alt = %H:%M:%S
+
+label = "%{A3:alacritty --title "Calendar" -e calcurse:}%{T86} %{T-}%date% %time%%{A} " 
+label-background = ${colors.cyan-1}
+label-padding = 1
+
+; vim:ft=dosini

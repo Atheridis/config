@@ -1,0 +1,56 @@
+; Polybar - Yorugo
+
+; shapes
+include-directory = shapes
+
+; modules
+include-directory = modules
+
+; colors
+include-file = color
+
+[bar]
+width = 100%
+height = 34
+offset-y = 0
+offset-x = 0
+override-redirect = true
+wm-restack = i3
+
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+;line-size = 4
+
+;border-top-size = 4
+;border-top-color = #000
+
+;dim-value = 0
+
+;tray-position = center
+
+cursor-click = pointer
+
+
+; Fonts
+include-file = fonts
+
+modules-left = rofi
+modules-center = i3
+modules-right = xkeyboard pulseaudio date powermenu 
+
+
+[bar/bar1]
+monitor = ${env:MONITOR:DisplayPort-2}
+inherit = bar
+
+
+[bar/bar2]
+monitor = ${env:MONITOR:DVI-D-0}
+inherit = bar
+
+[settings]
+compositing-underline = over
+; vim:ft=dosini
