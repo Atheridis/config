@@ -49,6 +49,10 @@ inherit = bar/bar0
 
 
 [bar/bar2]
+monitor = ${env:MONITOR:HDMI-A-0}
+inherit = bar/bar0
+
+[bar/bar3]
 monitor = ${env:MONITOR:DVI-D-0}
 inherit = bar/bar0
 

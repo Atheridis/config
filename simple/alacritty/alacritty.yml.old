@@ -1,31 +1,32 @@
-# TokyoNight Alacritty Colors
-colors:
-  # Default colors
-  primary:
-    background: '#1a1b26'
-    foreground: '#c0caf5'
+# Selection colors
+selection:
+  text:       '0xFAFAFA'
+  background: '0x252834'
 
-  # Normal colors
-  normal:
-    black:   '#15161E'
-    red:     '#a7566e'
-    green:   '#5e9e3a'
-    yellow:  '#a07f48'
-    blue:    '#4a6aa7'
-    magenta: '#8b6aa7'
-    cyan:    '#4d8faf'
-    white:   '#99a1c6'
+# Normal colors
+primary:
+  background: '0x313440'
+  foreground: '0xFAFAFA'
+normal:
+  black:   '0x282C34'
+  red:     '0xFF6059'
+  green:   '0x5FFF87'
+  yellow:  '0xFFFF87'
+  blue:    '0x5FAFFF'
+  magenta: '0xAF87FF'
+  cyan:    '0x5FAFFF'
+  white:   '0xFAFAFA'
 
-  # Bright colors
-  bright:
-    black:   '#414868'
-    red:     '#f7768e'
-    green:   '#9ece6a'
-    yellow:  '#e0af68'
-    blue:    '#7aa2f7'
-    magenta: '#bb9af7'
-    cyan:    '#7dcfff'
-    white:   '#c0caf5'
+# Bright colors
+bright:
+  black:   '0x282C34'
+  red:     '0xFF6059'
+  green:   '0x5FFF87'
+  yellow:  '0xFFFF87'
+  blue:    '0x5FAFFF'
+  magenta: '0xAF87FF'
+  cyan:    '0x5FAFFF'
+  white:   '0xFAFAFA'
 
 font:
   normal:
@@ -73,3 +74,6 @@ selection:
   save_to_clipboard: false
 
 live_config_reload: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }

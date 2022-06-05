@@ -1,4 +1,5 @@
 {
+    "python.formatting.provider": "black",
     "coc.preferences.formatOnSaveFiletypes": [ 
         "c",
         "cpp", 
@@ -12,5 +13,12 @@
         "python",
         "rust",
         "toml"
+    ],
+    "html.filetypes": [
+        "html",
+        "handlebars",
+        "htmldjango",
+        "blade",
+        "jinja"
     ]
 }

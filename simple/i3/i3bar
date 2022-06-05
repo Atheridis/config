@@ -23,10 +23,11 @@ format = "{icon} {available} / {total}"
 block = "memory"
 display_type = "memory"
 format_mem = "{mem_used} /{mem_total}"
+format_swap = "{swap_used} / {swap_total}"
 warning_mem = 80
 critical_mem = 90
 interval = 10
-clickable = false
+clickable = true
 
 [[block]]
 block = "cpu"

@@ -1,5 +1,8 @@
 return require('packer').startup(function()
 
+        -- Jinja support
+        use 'lepture/vim-jinja'
+
         -- Auto pairs for quotes and brackets
         use 'jiangmiao/auto-pairs'
 
@@ -27,7 +30,7 @@ return require('packer').startup(function()
 
         -- Lualine
         use {
-            'shadmansaleh/lualine.nvim',
+            'nvim-lualine/lualine.nvim',
             requires = {'kyazdani42/nvim-web-devicons', opt = true}
         }
 

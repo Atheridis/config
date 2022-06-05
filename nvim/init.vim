@@ -8,6 +8,7 @@ source $HOME/.config/nvim/plugin-settings/vim-scope.vim
 
 " Plugins
 source $HOME/.config/nvim/lua/plugins.lua
+" source $HOME/.config/nvim/plugin-settings/plugins.vim
 
 " Themes
 source $HOME/.config/nvim/theme.vim

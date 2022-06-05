@@ -13,12 +13,17 @@ set autoindent
 
 set colorcolumn=79
 set nowrap
+set linebreak
+augroup Markdown
+    autocmd!
+    autocmd FileType markdown set wrap
+augroup END
 set number relativenumber
 set hidden
 set nohlsearch
 
 au BufEnter * set fo-=c
-au BufEnter * set fo-=r
+" au BufEnter * set fo-=r
 au BufEnter * set fo-=o
 
 set clipboard=unnamedplus

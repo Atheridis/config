@@ -1,31 +1,30 @@
-# TokyoNight Alacritty Colors
+# XTerm's default colors
 colors:
-  # Default colors
-  primary:
-    background: '#1a1b26'
-    foreground: '#c0caf5'
+   # Default colors
+   primary:
+     background: '#000000'
+     foreground: '#ffffff'
+   # Normal colors
+   normal:
+     black:   '#000000'
+     red:     '#cd0000'
+     green:   '#00cd00'
+     yellow:  '#cdcd00'
+     blue:    '#0000ee'
+     magenta: '#cd00cd'
+     cyan:    '#00cdcd'
+     white:   '#e5e5e5'
 
-  # Normal colors
-  normal:
-    black:   '#15161E'
-    red:     '#a7566e'
-    green:   '#5e9e3a'
-    yellow:  '#a07f48'
-    blue:    '#4a6aa7'
-    magenta: '#8b6aa7'
-    cyan:    '#4d8faf'
-    white:   '#99a1c6'
-
-  # Bright colors
-  bright:
-    black:   '#414868'
-    red:     '#f7768e'
-    green:   '#9ece6a'
-    yellow:  '#e0af68'
-    blue:    '#7aa2f7'
-    magenta: '#bb9af7'
-    cyan:    '#7dcfff'
-    white:   '#c0caf5'
+   # Bright colors
+   bright:
+     black:   '#7f7f7f'
+     red:     '#ff0000'
+     green:   '#00ff00'
+     yellow:  '#ffff00'
+     blue:    '#5c5cff'
+     magenta: '#ff00ff'
+     cyan:    '#00ffff'
+     white:   '#ffffff'
 
 font:
   normal:

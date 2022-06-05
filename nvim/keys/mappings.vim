@@ -21,6 +21,7 @@ nnoremap <M-l>    :vertical resize +2<CR>
 
 " Remap escape
 inoremap jkl <Esc>
+inoremap JKL <Esc>
 
 " Tab changes buffer
 nnoremap <TAB> :bnext<CR>
@@ -36,6 +37,9 @@ nnoremap <M-;> A;<Esc>
 " add a comma
 inoremap <M-,> <Esc>A,
 nnoremap <M-,> A,<Esc>
+
+" add 3 `
+inoremap <M-`> ```
 
 " add brackets
 inoremap <M-9> <Esc>A()<Left>
@@ -63,6 +67,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" Auto format on save
+autocmd BufWritePre *.html :normal gg=G ``
 
 " Toggle nvim-tree
 nnoremap <leader>e :NvimTreeToggle<CR>

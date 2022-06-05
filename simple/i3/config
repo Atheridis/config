@@ -34,9 +34,17 @@ set $ws18 "18"
 set $ws19 "19"
 set $ws10 "20"
 
+set $ws21 "21"
+set $ws22 "22"
+set $ws23 "23"
+set $ws24 "24"
+set $ws25 "25"
+set $ws26 "26"
+
 # Set Monitors
-set $monitor_1 DisplayPort-2
-set $monitor_2 DVI-D-0
+set $monitor_1 HDMI-A-0
+set $monitor_2 DisplayPort-0
+set $monitor_3 DVI-D-0
 
 ####################################
 
@@ -50,6 +58,15 @@ killall unclutter; unclutter
 # Start picom
 exec_always --no-startup-id \
 killall picom; picom
+
+exec_always --no-startup-id \
+xrandr --output DisplayPort-0 --mode 2560x1440 --pos 0x300 --rate 75
+
+exec_always --no-startup-id \
+xrandr --output HDMI-A-0 --primary --mode 1920x1080 --pos 2560x660 --rate 144
+
+exec_always --no-startup-id \
+xrandr --output DVI-D-0 --mode 1920x1080 --pos 4480x0 --rotate right
 
 ####################################
 
@@ -97,10 +114,17 @@ workspace $ws18 output $monitor_2
 workspace $ws19 output $monitor_2
 workspace $ws10 output $monitor_2
 
-assign [Class="discord"] $ws0
-assign [Class="Caprine"] $ws0
-assign [Class="tutanota-desktop"] $ws0
-assign [Class="Steam"] $ws10
+workspace $ws21 output $monitor_3
+workspace $ws22 output $monitor_3
+workspace $ws23 output $monitor_3
+workspace $ws24 output $monitor_3
+workspace $ws25 output $monitor_3
+workspace $ws26 output $monitor_3
+
+assign [Class="discord"] $ws26
+assign [Class="Caprine"] $ws26
+assign [Class="tutanota-desktop"] $ws10
+assign [Class="Steam"] $ws19
 
 for_window [class="Nemo"] floating enabled
 for_window [class="Pavucontrol"] floating enabled
@@ -135,7 +159,7 @@ exec --no-startup-id i3-sensible-terminal
 
 # Start Rofi
 bindsym $mod+d \
-exec --no-startup-id\
+exec --no-startup-id \
 "rofi -modi drun, run -show drun -me-select-entry '' -me-accept-entry MousePrimary"
 
 # Start betterlockscreen
@@ -175,6 +199,13 @@ bindsym $mod+F8 workspace $ws18
 bindsym $mod+F9 workspace $ws19
 bindsym $mod+F10 workspace $ws10
 
+bindsym $mod+Insert workspace $ws21
+bindsym $mod+Home workspace $ws22
+bindsym $mod+Prior workspace $ws23
+bindsym $mod+Delete workspace $ws24
+bindsym $mod+End workspace $ws25
+bindsym $mod+Next workspace $ws26
+
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -197,6 +228,13 @@ bindsym $mod+Shift+F7 move container to workspace $ws17
 bindsym $mod+Shift+F8 move container to workspace $ws18
 bindsym $mod+Shift+F9 move container to workspace $ws19
 bindsym $mod+Shift+F10 move container to workspace $ws10
+
+bindsym $mod+Shift+Insert move container to workspace $ws21
+bindsym $mod+Shift+Home move container to workspace $ws22
+bindsym $mod+Shift+Prior move container to workspace $ws23
+bindsym $mod+Shift+Delete move container to workspace $ws24
+bindsym $mod+Shift+End move container to workspace $ws25
+bindsym $mod+Shift+Next move container to workspace $ws26
 
 # Scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -307,7 +345,7 @@ layout tabbed
 bindsym $mod+e \
 layout toggle split
 
-# Toggl tiling / floating
+# Toggle tiling / floating
 bindsym $mod+Shift+space \
 floating toggle
 
